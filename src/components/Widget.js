@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import Info from "./Info";
 import Cpu from "./Cpu";
 import Mem from "./Mem";
+import Net from "./Net";
 
 const Widget = props => {
   const metrics =
@@ -75,6 +76,7 @@ const Widget = props => {
       </div>
       <Cpu cpuLoad={cpuLoad} cpuTemp={cpuTemp} />
       <Mem totalMem={totalMem} memUsage={memUsage} />
+      <Net tx={sentBytes} rx={recievedBytes} />
       <Info
         osType={osType}
         upTime={upTime}

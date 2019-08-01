@@ -34,6 +34,7 @@ const App = props => {
           Submit
         </button>
       </form>
+      <br />
       <div className="App" style={containerColStyle}>
         {widgetJSXArray}
       </div>
